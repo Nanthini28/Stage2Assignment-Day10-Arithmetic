@@ -7,3 +7,5 @@ res=$(($d * $c))
 echo "ResultU2:"$res
 e=$(( (($a * $b)) + $c))
 echo "ResultU3:"$e
+f=$(( (($c + $a)) / $b))
+echo "ResultU4:"$f
