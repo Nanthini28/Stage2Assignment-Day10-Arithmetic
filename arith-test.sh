@@ -23,3 +23,7 @@ echo "U1" ${Result[res]}
 echo "U2" ${Result[e]}
 echo "U3" ${Result[f]}
 echo "U4" ${Result[g]}
+for resu in ${!Result[@]}
+do
+	echo ${resu} ${Result[${resu}]}
+done
