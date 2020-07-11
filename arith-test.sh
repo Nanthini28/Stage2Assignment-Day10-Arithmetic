@@ -9,3 +9,5 @@ e=$(( (($a * $b)) + $c))
 echo "ResultU3:"$e
 f=$(( (($c + $a)) / $b))
 echo "ResultU4:"$f
+g=$((  (($a%$b)) + $c))
+echo "ResultU5:"$g
