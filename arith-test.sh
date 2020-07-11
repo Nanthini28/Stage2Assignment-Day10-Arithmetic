@@ -1,7 +1,5 @@
 #!/bin/bash
-read -p "Enter the value:" a
-read -p "Enter the value:" b
-read -p "Enter the value:" c`
+read -p "Enter the value:" a b c
 d=$(($a + $b))
 res=$(($d * $c))
 echo "ResultU2:"$res
@@ -18,7 +16,6 @@ Result[e]=$e
 Result[f]=$f
 Result[g]=$g
 
-
 echo "U1" ${Result[res]}
 echo "U2" ${Result[e]}
 echo "U3" ${Result[f]}
@@ -27,3 +24,5 @@ for resu in ${!Result[@]}
 do
 	echo ${resu} ${Result[${resu}]}
 done
+echo "Sorted Result in Descending order:" ${Result[@]} | tr " " "\n" | sort -nr | tr "\n" " "
+echo "Sorted Result in Ascending Order:" ${Result[@]} | tr " " "\n" | sort -n | tr"\n" " "
